@@ -1,103 +1,32 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
+
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <section className="relative mt-1 text-primary xs:pl-[0px] px-[15px] xs:pr-[0px] sm:pl-[22px] sm:pr-[22px] md:pl-[22px] md:pr-[22px] lg:pl-[22px] lg:pr-[22px] xl:pl-[22px] xl:pr-[22px] 2xl:pl-[22px] 2xl:pr-[22px]">
+        <div className="relative h-full max-w-[1504px] mx-auto ">
+          <div className="pointer-events-none absolute bottom-0 left-0 right-0 top-0 rounded-[30px] bg-[#1A3560] opacity-50" />
+          <video
+            className="max-h-[85vh] w-full rounded-[30px] object-cover"
+            muted
+            loop
+            autoPlay
+            playsInline
+          >
+            <source src="/videos/Web2.mp4" />
+          </video>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <div className="absolute left-0 top-0 flex h-full flex-col justify-end xs:ml-[20px] xs:max-w-[426px] xs:pb-[20px] sm:ml-[20px] sm:max-w-[526px] sm:pb-[20px] md:ml-[78px] md:max-w-[526px] md:pb-[87px] lg:ml-[78px] lg:max-w-[526px] lg:pb-[87px] xl:ml-[78px] xl:max-w-[626px] xl:pb-[87px] 2xl:ml-[78px] 2xl:max-w-[626px] 2xl:pb-[87px]">
+            <h1 className="leading-[110%] font-bold text-[#FFFFFF] xs:mb-[17px] sm:mb-[31px] sm:text-[31px] md:mb-[31px] md:text-[51px] lg:mb-[31px] lg:text-[51px] xl:mb-[31px] xl:text-[51px] 2xl:mb-[31 px] 2xl:text-[48px]">
+              Improving the IT and Digital Education Landscape in Uzbekistan: Research Phase
+            </h1>
+            <Button className="max-w-[240px] w-full cursor-pointer min-h-[58px] text-lg font-bold rounded-[12px] bg-[#6C9CEC] hover:bg-[#6C9CEC]">Registration</Button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+    </>
   );
 }
